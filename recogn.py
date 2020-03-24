@@ -14,7 +14,7 @@ def listen():
     """
     text = 'não entendi.Repita!'
     r = sr.Recognizer()                 # initialize recognizer
-    r.energy_threshold = 8000
+    r.energy_threshold = 5000
     with sr.Microphone() as source:     # mention source it will be either Microphone or audio files.
         audio = r.listen(source)        # listen to the source
         try:
